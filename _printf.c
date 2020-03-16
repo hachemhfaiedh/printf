@@ -3,7 +3,7 @@
 #include "holberton.h"
 
 /**
-*printf - produce output according to a format.
+*_printf - produce output according to a format.
 *@format: format of output
 *Return: int
 */
