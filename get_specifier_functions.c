@@ -2,11 +2,11 @@
 int get_specifier_functions(char c, va_list pa)
 {
 	type_t type[] ={
-	{'c', print_char},
-	{'s', print_string},
-	{'%', print_percent},
-	{'i', print_integer},
-	{'d', print_integer},
+	{'c', _char},
+	{'s', _string},
+	{'%', _percentage},
+	{'i', _integer},
+	{'d', _integer},
 	{'0', NULL}
 	};
 	int i =0;
