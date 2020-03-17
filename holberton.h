@@ -1,6 +1,10 @@
 #ifndef _HOLBERTON_H
 #define _HOLBERTON_H
-
+#include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdout.h>
 int _putchar(char c);
 int _printf(const char *format, ...);
 int _char(va_list spec);
