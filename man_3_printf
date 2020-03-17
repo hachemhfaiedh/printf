@@ -1,0 +1,38 @@
+.TH man 3  "17 march 2020" "GNU" "_printf man page"
+.SH NAME
+.B _printf
+
+.SH SYNOPSIS
+#include "holberton.h"
+.br
+.B int _printf(const char*format,...);
+.br
+.B int get_specifier_functions(char c, va_list pa);
+.br
+.B int _char(va_list args);
+.br
+.B int _string(va_list args);
+.br
+.B int _percent(va_list __attribute__((unused)) args);
+.br
+.B int _integer(va_list args);
+.br
+.SH DESCRIPTION
+Formats and prints data to standard output after conversion.
+.SH Conversion specifiers
+.BR "d, i"
+The int argument is converted to a signed decimal or an integer.
+.BR  "%"
+A '%' is written.  No argument is converted.  The complete conversion specification is '%%'.
+.BR "c"
+The int argument is converted to a char
+.B "s"
+The expected pointer *s is used to print strings
+.SH RETURN VALUE
+_printf returns the number of characters printed if the printing is successful.
+.SH SEE ALSO
+printf(3)
+.SH BUGS
+No bugs found yet.
+.SH AUTHOR
+Hachem Hfaiedh, Nedhir Ben Hammouda.
