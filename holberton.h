@@ -11,5 +11,10 @@ int _char(va_list spec);
 int _string(va_list spec);
 int _percentage(__attribute__((unused))va_list spec);
 int _integer(va_list spec);
+typedef struct specifiers
+{
+char t;
+int (*f)(va_list pa);
+} type_t;
 
 #endif
