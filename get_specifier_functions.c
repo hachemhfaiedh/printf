@@ -13,11 +13,11 @@ int get_specifier_functions(char c, va_list pa)
 	int countt = 0;
 	while (i < 6)
 	{
-		if (c == (type[i].t)
-		{
+		if (c == (type[i].t))
+{
 			countt += type[i].f(pa);
 			return(countt);
-		}
+}
 		i++;
 	}
 	return (-1);

@@ -46,7 +46,7 @@ int _percentage(__attribute__((unused))va_list spec)
  */
 int _integer(va_list spec)
 {
-	int count_int, x, div = 1;
+	int count_int = 0, x, div = 1;
 	unsigned int n;
 
 	x = va_arg(spec, int);
