@@ -13,8 +13,16 @@ int _printf(const char *format, ...)
 	return (-1);
 	for(i = 0;format[i] != '\0'; i++)
 	{
-	if ( forma[i] == '%')
+	if ( format[i] == '%')
 		{
+			count_format++;
+			for(;format[i] == ' '; i++)
+			{
+			}
+			if (format[i] == '\0')
+				return (-1);
+			count_format += get_specifier_functions(format[i], type);
+			
 		}
 	else
 	{
