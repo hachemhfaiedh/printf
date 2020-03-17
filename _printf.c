@@ -1,7 +1,4 @@
-#include <stdout.h>
-#include <stdarg.h>
 #include "holberton.h"
-
 /**
 *_printf - produce output according to a format.
 *@format: format of output
@@ -9,40 +6,21 @@
 */
 int _printf(const char *format, ...)
 {
-	va_list ap;
-	int count = 0;
-	int i = 0;
-	char *p;
-	//other variables
-
-	va_start(ap, format);
-	while (format)
+	int i = 0, count_format = 0;
+	va_list pa;
+	va_start(pa, format)
+	if(format == NULL)
+	return (-1);
+	for(i = 0;format[i] != '\0'; i++)
 	{
-		if (*format == '%')
-		format++;
-		switch (*format)
+	if ( forma[i] == '%')
 		{
-			case 'c':
-				//print charachter function
-				break;
-			case 's':
-				//string function
-				break;
-			case '%':
-				//dhaherli yaffichi %
-				break;
-			case 'd':
-				//task 1 print integer
-				break;
-			case 'i':
-				//dhaherli nafs lahkeya fil printf maantha nchoufou kifeh ndakhlouha fil case elli 9abalha nrodouhom fard case
-			default:
-			_putchar('%');
-			_putchar(*format)
-			format++;
 		}
-		//fama fazet lahne mazelt markztch fihom(normalament taffichi fonction normale ellibech tektbou khadmin kifha to93d tincrimenti w taffichi hata lin tousel lil if el loula
+	else
+	{
+		_putchar(format[i]);
+		count_format++;
 	}
-	va_end(ap);
-	return (count);
+	va_end(pa);
+	return (count_format);
 }
