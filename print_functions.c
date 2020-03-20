@@ -57,7 +57,7 @@ int _integer(va_list spec)
 		x *= -1;
 	}
 	n = x;
-	while ((x / div ) > 9)
+	while ((x / div) > 9)
 	{
 		div *= 10;
 		n = x;
