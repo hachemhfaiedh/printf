@@ -1,7 +1,7 @@
 .TH man 3  "17 march 2020" "GNU" "_printf man page"
 .SH NAME
 .B _printf
-
+the function works exactly like the original printf, formatted output to stdout.
 .SH SYNOPSIS
 #include "holberton.h"
 .br
@@ -28,6 +28,10 @@ A '%' is written.  No argument is converted.  The complete conversion specificat
 The int argument is converted to a char
 .B "s"
 The expected pointer *s is used to print strings
+.SH Example
+Print a string:
+#include "holberton.h"
+_printf("My name is %s and I am %i years old", John, 22);
 .SH RETURN VALUE
 _printf returns the number of characters printed if the printing is successful.
 .SH SEE ALSO
